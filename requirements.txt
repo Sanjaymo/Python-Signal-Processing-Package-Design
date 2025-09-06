@@ -1,0 +1,16 @@
+# requirements.txt - Package dependencies
+
+# Core numerical computing
+numpy>=1.19.0
+
+# Plotting and visualization
+matplotlib>=3.3.0
+
+# Development dependencies (optional)
+pytest>=6.0
+black
+flake8
+
+# Documentation dependencies (optional)
+sphinx
+sphinx-rtd-theme

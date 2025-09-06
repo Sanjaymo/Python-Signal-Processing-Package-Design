@@ -1,0 +1,64 @@
+# File: pyproject.toml
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signal-ICT-abhinaychoudhari-92400133174"
+version = "1.0.0"
+description = "A comprehensive signal processing package for generating and manipulating signals"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Abhinay Choudhari", email = "abhinaychoudhari@example.com"}
+]
+maintainers = [
+    {name = "Abhinay Choudhari", email = "abhinaychoudhari@example.com"}
+]
+keywords = ["signal processing", "digital signal processing", "signals and systems", "ICT", "engineering"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.19.0",
+    "matplotlib>=3.3.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black",
+    "flake8"
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme"
+]
+
+[project.urls]
+Homepage = "https://github.com/abhinaychoudhari/signal_ICT_abhinaychoudhari_92400133174"
+Repository = "https://github.com/abhinaychoudhari/signal_ICT_abhinaychoudhari_92400133174"
+"Bug Tracker" = "https://github.com/abhinaychoudhari/signal_ICT_abhinaychoudhari_92400133174/issues"
+
+[project.scripts]
+signal-demo = "signal_ICT_abhinaychoudhari_92400133174.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["signal_ICT_abhinaychoudhari_92400133174*"]
